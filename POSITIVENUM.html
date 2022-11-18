@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>positive number</title>
+ <style>
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+        p{
+            font-size: 30px;
+        }
+ </style>
+</head>
+<body>
+    <div>
+    <h1>GET POSITIVE NUMBER</h1>
+    <input type="number" id="textnum" /><br>
+    <br>
+    <script>
+         textnum.oninput=()=>{
+         let a =document.getElementById('textnum').value; 
+
+         if(a<0) document.getElementById('outnum').innerHTML="enter a positive value";
+        
+         else   document.getElementById('outnum').innerHTML="correct value";}
+         
+    </script>
+    <p id="outnum"> </p>
+    </div>
+</body>
+</html>

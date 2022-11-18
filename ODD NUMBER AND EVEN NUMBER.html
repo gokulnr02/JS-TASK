@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>odd num and even</title>
+    <style>
+span{
+    display: inline-block;
+    font-size: 30px;
+    padding: 5px;
+}
+body{
+   display: flex;
+    
+}
+div{
+    width: 300px;
+    height: 300px;
+    padding-left: 250px;
+    margin-top: 230px;
+}
+ </style>
+</head>
+
+<body>
+    <div class="container1">
+        <h1>ODD NUMBER</h1>
+        <input type="number" id="oddnum"/>
+        <script>
+                oddnum.oninput=()=>{
+                let a = document.getElementById('oddnum').value;
+                let b=parseInt(a)+4;
+                let c=parseInt(b)+2;
+                 if(a%2!==0){
+                    document.getElementById('outval1').innerHTML=parseInt(a)+2+",";
+                    document.getElementById('outval2').innerHTML=b+",";
+                    document.getElementById('outval3').innerHTML=c;
+                } 
+            
+            }
+        </script>
+         <br><br>
+       <span>  <p id="outval1"></p></span>
+       <span> <p id="outval2"></p></span>
+       <span> <p id="outval3"></p></span>
+     </div>
+
+     <div class="container2">
+        <h1>EVEN NUMBER</h1>
+        <input type="number" id="evennum"/>
+        <script>
+                evennum.oninput=()=>{
+                let a1 = document.getElementById('evennum').value;
+                let b1=parseInt(a1)+4;
+                let c1=parseInt(b1)+2;
+                 if(a1%2==0){
+                    document.getElementById('outval4').innerHTML=parseInt(a1)+2+",";
+                    document.getElementById('outval5').innerHTML=b1+",";
+                    document.getElementById('outval6').innerHTML=c1;
+                } 
+            
+            }
+        </script>
+         <br><br>
+       <span>  <p id="outval4"></p></span>
+       <span> <p id="outval5"></p></span>
+       <span> <p id="outval6"></p></span>
+     </div>
+    
+</body>
+</html>
